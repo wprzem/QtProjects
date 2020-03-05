@@ -21,9 +21,10 @@ protected:
     void keyPressEvent(QKeyEvent* event) override;
 
 private:
-    void prepareColorMapping();
+    void setButtonsColorMapping();
     void setPressedButtonsColor();
-    void handleTeamSignal(QPushButton* team);
+    void setResult();
+    void setButtonsMapping();
     void resetResult();
     Ui::Notepad *ui;
     bool resultLock = false;
